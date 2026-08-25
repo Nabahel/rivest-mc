@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "rivest-mc: simulation and calibration tools for the Rivest post-calving caribou abundance estimator"
+abstract: >-
+  An independent Python implementation of the Rivest two-phase post-calving
+  abundance estimator, validated against the CRAN caribou package, together with
+  Monte Carlo machinery for measuring its bias, RMSE and interval coverage under
+  controlled departures from the random-mixing assumption, and a calibration of
+  the randomness score test for realistic survey sizes.
+authors:
+  - family-names: Rex-Oneal
+    given-names: Nabahel
+    affiliation: University of Regina
+license: MIT
+keywords:
+  - caribou
+  - Rangifer tarandus
+  - abundance estimation
+  - post-calving survey
+  - Monte Carlo simulation
+  - random mixing
+version: 1.0.0
+date-released: "2026-08-25"

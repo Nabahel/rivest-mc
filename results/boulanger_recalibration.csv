@@ -1,0 +1,21 @@
+herd,year,model,p_pub,z_implied,rejects_pub,rejects_cal
+Bluenose East,2000,TB2,0.55,-0.12566134685507416,False,False
+Bluenose East,2010,TB8,0.142,1.0713768892802131,False,True
+Bluenose West,2005,TB6,0.642,-0.3638098590296958,False,False
+Bluenose West,2006,TB9,0.81,-0.8778962950512289,False,False
+Bluenose West,2006,TB6,0.12,1.1749867920660904,False,True
+Bluenose West,2009,TB12,0.024,1.9773684281819461,True,True
+Bluenose West,2012,TB9,0.0,4.753424308817087,True,True
+Bluenose West,2015,TB3,0.536,-0.0903614371292588,False,False
+Cape Bathurst,2005,H,0.0,4.753424308817087,True,True
+Cape Bathurst,2006,TB7,0.237,0.715985989610205,False,False
+Cape Bathurst,2006,TB3,0.031,1.8662957434581071,True,True
+Cape Bathurst,2006,TB7,0.6,-0.2533471031357997,False,False
+Cape Bathurst,2009,TB4,0.759,-0.7030894603309285,False,False
+Cape Bathurst,2012,H,0.646,-0.37454349919944274,False,False
+Cape Bathurst,2015,TB2,0.042,1.7279343223884185,True,True
+Tuktoyaktuk Pen.,2006,-,0.45,0.12566134685507416,False,False
+Tuktoyaktuk Pen.,2006,-,0.45,0.12566134685507416,False,False
+Tuktoyaktuk Pen.,2009,TB2,0.092,1.3285393288568095,False,True
+Tuktoyaktuk Pen.,2012,TB2,0.769,-0.7355575573851105,False,False
+Tuktoyaktuk Pen.,2015,-,0.481,0.04764395595447656,False,False

@@ -1,4 +1,6 @@
 cff-version: 1.2.0
+doi: 10.5281/zenodo.22099960
+repository-code: "https://github.com/Nabahel/rivest-mc"
 message: "If you use this software, please cite it as below."
 title: "rivest-mc: simulation and calibration tools for the Rivest post-calving caribou abundance estimator"
 abstract: >-

@@ -1,5 +1,7 @@
 # Rivest post-calving estimator — simulation study
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22099960.svg)](https://doi.org/10.5281/zenodo.22099960)
+
 An independent Python implementation of the Rivest post-calving abundance
 estimator, validated against the CRAN `caribou` package, plus the Monte Carlo
 machinery to measure its bias, RMSE, and interval coverage under controlled
@@ -72,6 +74,10 @@ python3 make_figures.py
 ## Citing
 
 See `CITATION.cff`. Released under the MIT licence.
+
+> Rex-Oneal, N. 2026. *rivest-mc: simulation and calibration tools for the Rivest
+> post-calving caribou abundance estimator.* Version 1.0.0. Zenodo.
+> https://doi.org/10.5281/zenodo.22099960
 
 ## The validation gate
 

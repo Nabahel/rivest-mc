@@ -29,6 +29,8 @@ rivest_mc/simulate.py     group-size generators, collar allocation with a
                           clustering parameter, detection, the replicate loop
 validate_vs_R.py          cross-validation gate against caribou::abundance()
 run_experiments.py        the four simulation studies (A-D)
+study_E_z_to_bias.py      study E: the error conditional on the observed
+                          score statistic and the number of active collars
 public_data_analysis.py   the real-data component, on public data only
 make_figures.py           publication figures (PNG + vector PDF)
 results/                  CSV output, one file per study
@@ -44,6 +46,7 @@ pip install -r requirements.txt     # python >= 3.10
 ## Tests
 
 ```bash
+pip install -r requirements.txt            # required first; sympy is a dependency
 python3 -m pytest test_estimator.py -q     # 10 tests, ~5 s
 ```
 
@@ -63,10 +66,12 @@ R CMD INSTALL -l ~/Rlib caribou
 ## Run it
 
 ```bash
+pip install -r requirements.txt            # do this first: sympy is required
 python3 -m pytest test_estimator.py -q     # fast regression check
 python3 validate_vs_R.py                   # full gate against the R package
 python3 run_experiments.py --reps 1000     # ~2 minutes on two cores
 python3 calibration_study.py --reps 3000   # ~2 minutes
+python3 study_E_z_to_bias.py --reps 500    # ~3 minutes
 python3 public_data_analysis.py            # ~40 s
 python3 make_figures.py
 ```
@@ -120,6 +125,7 @@ Two errors dominate everything else, and both are easy to make:
 | B | What does collar clustering cost? | Severe **under**estimation: −11% at κ=50, −28% at κ=10, −55% at κ=1, with coverage falling from 94% to 7%. The reported standard error does not grow to match, so precision is overstated. |
 | C | How many collars are needed? | Under random mixing, 50 suffice for near-nominal coverage. Under mild clustering (κ=10), 400 collars still leave −20% bias and 22% coverage. **Collars do not buy your way out of clustering.** |
 | D | What does the wrong detection model cost? | Up to +57% bias. The threshold and independence models are the dangerous ones to over-apply; homogeneity is markedly robust (worst case −6.4%). |
+| E | What does an observed score statistic imply about the error? | At 100 active collars, a statistic of 3.70–6.00 implies a median error of −13.8%. The statistic is **not interpretable without the collar number**: the same clustering gives a median z of 3.0 at 50 collars, 8.0 at 100 and 12.6 at 150. |
 
 ## Two findings from the public herd-years
 
